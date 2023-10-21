@@ -40,7 +40,7 @@ document.createElement("div");
 imgElement.src= url ;
 container.innerHTML = title ;
 
-const photoContainer = getElementById("photoContainer");
+const photoContainer = document.getElementById("photoContainer");
 
 photoContainer.appendChild(imgElement);
 photoContainer.appendChild(container);
