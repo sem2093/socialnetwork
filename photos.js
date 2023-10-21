@@ -48,16 +48,16 @@ for(let i=0;i< 100;i++) {
 const photoContainer = document.getElementById("photoContainer");
 const url = "https://picsum.photos/200";
 
-const image = document.querySelectorAll(".normal");
+//const image = document.querySelectorAll(".normal");
 
-const newImage = image.setAttribute("src",url);
+//const newImage = image.setAttribute("src",url);
 
 // Create an img element
 const img = document.createElement("img");
 
 // Set the src and alt attributes
 img.src = url; // Replace with the actual image URL
-img.alt = "Image Description"; // Replace with the alt text
+//img.alt = "Image Description"; // Replace with the alt text
 
 // Append the img element to the document or another container
 photoContainer.appendChild(img); // This appends it to the body of the document
