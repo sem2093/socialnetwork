@@ -1,3 +1,6 @@
+for(let i=0;i<50;i++){
+
+
 const min = 1;
 const max = 100;
 const randomIntInRange = Math.floor(Math.random() * (max - min + 1)) + min; 
@@ -19,36 +22,31 @@ fetch(fullUrl)
    const jsonString = JSON.stringify(json);
 
 
-outPut.innerHTML += jsonString;
+//outPut.innerHTML += jsonString;
 
 const jsonObject = JSON.parse(jsonString);
 
 // Access the 'url' property
-const url = jsonObject.url;
+const userId = jsonObject.userId;
+const title = jsonObject.title;
+const post = jsonObject.body;
 
-const thumbNail= jsonObject.thumbnailUrl;
+const container = document.createElement("div");
 
-console.log(url);
+const card = container.setAttribute("class","card");
 
-const thumbnail = document.querySelector(".thumbnail");
+// Combine and set the content
+container.innerHTML = `<br>Title: ${title}<br>User ID: ${userId} <br>Post: ${post}<br>`;
 
-const image = document.querySelector("img");
+// Append the container to the document
+feedContainer.appendChild(container); // You can choose where to append it
 
-const newImage = image.setAttribute("src",url);
 
-const thumbImage =
-thumbnail.setAttribute("src",thumbNail);
-})
-
+      })
 .catch(error => {
     console.error('Error:', error);
 });
-
-
-
-
-
-
+}
 
 
 /* 
