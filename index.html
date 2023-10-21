@@ -36,8 +36,26 @@
 </nav>
     </heading>
   <main>
-    <div class="card">
+    <div class="card m-5 p-2">
 <h2> Sign In </h2>
+      <div class="input-group flex-nowrap">
+  <span class="input-group-text" id="addon-wrapping">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+  <div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="inputPassword6" class="col-form-label">Password</label>
+  </div>
+  <div class="col-auto">
+    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="passwordHelpInline" class="form-text">
+      Must be 8-20 characters long.
+    </span>
+  </div>
+</div>    
       
 <p> Dont have an account? </p>
 <h2> Register </h2>
